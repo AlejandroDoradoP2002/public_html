@@ -1,0 +1,91 @@
+
+@import url("http://139.62.210.181/default.css");
+
+
+#about h2 {
+    color: blue; 
+}
+
+#hobbies h2 {
+    color: green; 
+}
+
+#Education h2 {
+    color: red; 
+}
+
+#Education li:nth-child(1) {
+    font-weight: bold; 
+}
+
+#Education li:nth-child(3) {
+    font-style: italic; 
+}
+
+#Education li:nth-child(5) {
+    text-decoration: underline; 
+}
+
+/* Increase font size for links with the 'index-link' class */
+#index-link:hover {
+    font-size: 150%;
+}
+
+
+#table table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+#table td {
+    text-align: center; 
+}
+
+/* Set the color of the header row to a primary color other than black or white */
+#table th {
+    background-color: #4CAF50; /* Green */
+    color: white; /* Text color */
+}
+
+/* Stripe every other data row */
+#table tr:nth-child(even) {
+    background-color: #1b1057; /* Light gray */
+}
+
+#table tr:nth-child(odd) {
+    background-color: #9d1111; 
+}
+/* Primary level */
+#ImportantEvents ol {
+    list-style-type: decimal; /* Arabic numbers */
+}
+
+/* Secondary level */
+#ImportantEvents ol ul {
+    list-style-type: upper-alpha; /* Uppercase letters */
+}
+
+input[type='radio'], input[type='checkbox'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+}
+input[type='radio']:checked, input[type='checkbox']:checked {
+    background-color: blue;
+}
+input[type='radio']:not(:checked), input[type='checkbox']:not(:checked) {
+    background-color: grey;
+}
+input[name='Major']:checked {
+    background-color: green;
+}
+input[name='Major']:not(:checked) {
+    background-color: grey;
+}
+input[name='languages']:checked {
+    background-color: blue;
+}
+input[name='languages']:not(:checked) {
+    background-color: grey;
+}
+

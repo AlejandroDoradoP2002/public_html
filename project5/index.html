@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><!-- Place your title here --></title>
+		<style>
+			<!-- Place any CSS code here -->
+		</style>
+	</head>
+	<body>
+		<h2><!-- Place a heading here --></h2>
+		
+		<!-- CAUTION - Avoid changing the values and style of the HTML tags below - CAUTION -->
+		<div style="width: 1000px; float: left;">
+			<!-- The canvas is where the animation happens -->
+			<canvas id="container" height=600 width=1000 style="border: 1px solid;"></canvas>
+		</div>
+		<!-- This div holds the interface for the user to control the animation -->
+		<div style="width: 325px; height: 590px; margin-left: 1020px; padding: 10px 0px 0px 10px; border: 1px solid;">
+			<!-- This div is for the Add a Circle radio button -->
+			<div style="width: 100px; float: left;">
+				<!-- Add a radio button to display the Add a Circle controls -->
+			</div>
+			<!-- This div is for the Update a Circle radio button -->
+			<div style="width: 120px; margin-left: 110px;">
+				<!-- Add a radio button to display the Update a Circle controls -->
+			</div>
+			<!-- This div is for the Add a Circle controls -->
+			<div id="add_circle" style="display: block; height: 175px;">
+				<!-- Add the Add a Circle controls here -->
+			</div>
+			<!-- This div is for the Update a Circle controls -->
+			<div id="update_circle" style="display: none;  height: 175px;">
+				<!-- Add the Update a Circle controls here -->
+			</div>
+			<!-- This div is for the Stop All Circles button -->
+			<div style="text-align: center;">
+				<!-- Add the Stop All Circles button here -->
+			</div>
+		</div>
+
+		<script>
+			<!-- The Circle class allows you to add multiple circles to the canvas -->
+			class Circle {
+				color = 0; <!-- The current color based on the circle's direction -->
+				movingDown = true; <!-- Is circle moving towards the bottom of canvas -->
+				movingRight = true; <!-- Is circle moving towards the right of canvas -->
+				name = ""; <!-- The name assigned to the circle -->
+				radius = 0; <!-- The radius assigned to the circle -->
+				speed = 0; <!-- The speed assigned to the circle -->
+				xPos = 0; <!-- The current horizontal position of the circle -->
+				yPos = 0; <!-- The current vertical position of the circle -->
+				
+				<!-- Create an instance of the Circle class -->
+				constructor(name, radius, speed) {
+					
+				}
+				
+				<!-- Getters and setters -->
+				get name() { }
+				
+				get radius() { }
+				
+				get speed() { }
+				
+				set name(name) { }
+								
+				set radius(radius) { }
+				
+				set speed(speed) { }
+				
+				<!-- Determine if the circle's direction needs to change -->
+				<!-- This should prevent the circle from traveling beyond the canvas borders -->
+				checkForWallCollision() {
+					
+				}
+				
+				<!-- Draw the circle at its current position on the canvas -->
+				draw(canvas) {
+					
+				}
+				
+				<!-- Choose the circle's color based on its direction of travel -->
+				updateColor() {
+					
+				}
+				
+				<!-- Update the circle's position based on its direction and speed -->
+				updatePosition() {
+					
+				}
+			}
+
+			const CIRCLES = []; <!-- Array to hold the circles added to the canvas -->
+			const COLORS = ["red", "green", "blue", "orange"];
+			const MAX_WIDTH = 1000; <!-- Width of the canvas defined in the HTML above -->
+			const MAX_HEIGHT = 600; <!-- Height of the canvas defined in the HTML above -->
+			<!-- Creates timer to automate the animation -->
+			<!-- The timer repeats every 10 milliseconds -->
+			const TIMER = setInterval(updateCanvas, 10, document.getElementById("container").getContext("2d"));
+			
+			updateAddCircleForm(); <!-- Prefills data in the Add a Circle fields -->
+			
+			<!-- Creates a new circle and adds it to the CIRCLES array -->
+			function addCircle() {
+				
+			}
+
+			<!-- Turns the timer off to stop the animation -->
+			function stopAnimation() {
+				clearInterval(TIMER);
+			}
+			
+			<!-- Prefills data in the Add a Circle fields -->
+			function updateAddCircleForm() {
+				
+			}
+
+			<!-- Updates the selected circle with the data in the Update a Circle fields -->
+			function updateCircle() {
+				
+			}
+			
+			<!-- Draws the next frame of animation on the canvas -->
+			function updateCanvas(canvas) {
+				
+			}
+
+			<!-- Display the fields of the the selected form: Add a Circle or Update a Circle -->			
+			function updateForm(control) {
+				
+			}
+			
+			<!-- Display the data in the Update a Circle fields when a circle is selected -->			
+			function updateSelection() {
+				
+			}
+			
+			<!-- Update the Update a Circle drop-down list when a circle is added -->
+			function updateSelectList() {
+				
+			}
+		</script>
+	</body>
+</html>

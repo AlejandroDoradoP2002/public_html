@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>COP3813 Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="./css/mySite.css">
+	</head>
+	<body>
+		<div class="_main_header" style="background-image: url('./images/cop3813_header.jpg');">
+		
+			<span class="_main_header">Alejandro Dorado's COP3813 Portfolio</span>			
+		</div>
+		<div style="float: left;"><input style="margin-top: 10px; margin-bottom: 10px;" type="button" id="help" onClick="toggleBubbles();" value="Show Help" /></div>
+		<div style="clear: left; ">
+			<p><span class="_body_text">Welcome to my COP3813 Portfolio</span></p>
+			<p><span class="_body_text">You can view my projects by clicking the links below.</span></p>
+			<div style="float: left;">
+			<ul>
+				<span class="_body_text">
+				<!-- Use <a>..</a> tags to link the Project n text below to your projects as you complete them -->
+					<li><a href="project1/index.html">Project 1</a></li>
+					<li>Project 2</a></li>
+					<li>Project 3</a></li>
+					<li>Project 4</a></li>
+					<li>Project 5</a></li>
+				</span>
+			</ul>
+			</div>
+			<div class="_bubble-div" style="float: left;"><p class="_bubble" style="max-width: 30em; margin-left: 100px;">This is your <strong>ePortfolio</strong>, which acts as a landing page to access each of the projects you complete during this class.</p></div>
+		</div>
+		<script>
+			function toggleBubbles() {
+				var button = document.getElementById("help");
+				var divs = document.getElementsByClassName("_bubble-div");
+				
+				button.value = button.value == "Show Help" ? "Hide Help" : "Show Help";
+				Array.prototype.filter.call(divs, function(testDiv){
+					if (button.value == "Hide Help") {
+						testDiv.style.display = "block";
+					} else {
+						testDiv.style.display = "none";
+					}
+				});
+			}
+		</script>
+	</body>
+</html>
