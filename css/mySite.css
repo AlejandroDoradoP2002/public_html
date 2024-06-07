@@ -70,22 +70,16 @@ input[type='radio'], input[type='checkbox'] {
     width: 20px;
     height: 20px;
 }
-input[type='radio']:checked, input[type='checkbox']:checked {
-    background-color: blue;
-}
-input[type='radio']:not(:checked), input[type='checkbox']:not(:checked) {
+
+input[name='Major']:not(:checked), input[type='checkbox']:not(:checked) {
     background-color: grey;
 }
 input[name='Major']:checked {
     background-color: green;
 }
-input[name='Major']:not(:checked) {
-    background-color: grey;
-}
-input[name='languages']:checked {
+
+input[type='checkbox']:checked {
     background-color: blue;
 }
-input[name='languages']:not(:checked) {
-    background-color: grey;
-}
+
 
